@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fresh Cash</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="map" class="map"></div>
+      <div class="content_container">
+        <div class="left_sidebar">
+          <div class="icon_container">
+            <button onclick="locations()" class="icon1"></button>
+            <button onclick="choose_area()" class="icon2"></button>
+            <button onclick="creator()" class="icon3"></button>
+          </div>
+        </div>
+      </div>
+      <div class="pop_up">
+        <div class="crosshair">
+          <div class="crosshair_cross"></div>
+        </div>
+        <div class="locations">
+          <button onclick="furio_camillo()" class="loc1">FURIO CAMILLO</button>
+          <button onclick="giulio_agricola()" class="loc2">
+            GIULIO AGRICOLA
+          </button>
+        </div>
+        <div class="selector">
+          <button onclick="get_coords()" class="selector_btn">FISSA</button>
+        </div>
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>

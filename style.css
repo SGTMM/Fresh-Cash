@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: green;
+  overflow: hidden;
+}
+
+.left_sidebar {
+  width: 90%;
+  height: 70%;
+  border-radius: 30px;
+  background: #fcfcfc;
+  box-shadow: 5px 5px 10px #b8b8b8, -5px -5px 10px #ffffff;
+}
+
+.icon_container {
+  margin-top: 25%;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+}
+
+.icon1 {
+  width: 90%;
+  height: 15%;
+  border: none;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  background-image: url("./img/pointer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon2 {
+  width: 90%;
+  height: 15%;
+  border: none;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  background-image: url("./img/trash_can.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon3 {
+  width: 90%;
+  height: 15%;
+  border: none;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  background-image: url("./img/pen.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pop_up {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.locations {
+  width: 70%;
+  height: 60%;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loc1 {
+  width: 90%;
+  height: 15%;
+  border: none;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.loc1:hover {
+  background-color: #b8b8b8;
+}
+
+.loc2 {
+  width: 90%;
+  height: 15%;
+  border: none;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.loc2:hover {
+  background-color: #b8b8b8;
+}
+
+.selector {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selector_btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.content_container {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin: 2.5%;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.crosshair {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crosshair_cross {
+  margin-left: 5%;
+  width: 5%;
+  height: 5%;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 50%;
+  position: absolute;
+}
